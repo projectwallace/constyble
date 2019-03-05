@@ -1,0 +1,74 @@
+{
+  "name": "constyble",
+  "version": "0.0.0",
+  "homepage": "https://www.projectwallace.com/oss",
+  "description": "A CSS complexity linter, based on css-analyzer.",
+  "bin": {
+    "constyble": "./cli.js"
+  },
+  "repository": "bartveneman/constyble",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "stats",
+    "analytics",
+    "analysis",
+    "test",
+    "assert",
+    "treshold",
+    "wallace",
+    "projectwallace",
+    "linter",
+    "complexity",
+    "static-analysis",
+    "css-linter"
+  ],
+  "dependencies": {
+    "@projectwallace/css-analyzer": "^2.1.1",
+    "flat": "^4.1.0",
+    "get-stdin": "^6.0.0",
+    "is-array": "^1.0.1",
+    "is-number": "^7.0.0",
+    "leven": "^2.1.0",
+    "meow": "^5.0.0",
+    "parse-json": "^4.0.0",
+    "path-exists": "^3.0.0",
+    "strip-json-comments": "^2.0.1",
+    "tap": "^12.5.1",
+    "update-notifier": "^2.5.0"
+  },
+  "devDependencies": {
+    "ava": "^1.3.1",
+    "execa": "^1.0.0",
+    "prettier": "^1.16.4",
+    "semver": "^5.6.0",
+    "trim-right": "^1.0.1",
+    "xo": "^0.24.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "xo": {
+    "semicolon": false,
+    "prettier": true,
+    "rules": {
+      "ava/no-import-test-files": "warn",
+      "ava/no-skip-test": "warn"
+    }
+  },
+  "prettier": {
+    "useTabs": true,
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "proseWrap": "always",
+    "overrides": [
+      {
+        "files": "*.json",
+        "options": {
+          "useTabs": false
+        }
+      }
+    ]
+  }
+}
