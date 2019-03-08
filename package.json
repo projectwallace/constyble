@@ -1,6 +1,6 @@
 {
   "name": "constyble",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://www.projectwallace.com/oss",
   "description": "A CSS complexity linter, based on css-analyzer.",
   "bin": {
