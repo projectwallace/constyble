@@ -4,7 +4,7 @@
   "homepage": "https://www.projectwallace.com/oss",
   "description": "A CSS complexity linter, based on css-analyzer.",
   "bin": {
-    "constyble": "./cli.js"
+    "constyble": "./lib/cli.js"
   },
   "repository": "bartveneman/constyble",
   "license": "MIT",

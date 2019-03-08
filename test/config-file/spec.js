@@ -6,7 +6,7 @@ const {MissingConfigException} = require('../../lib/exceptions')
 const FIXTURE_CSS = 'body {\n\tcolor: blue;\n}\n'
 
 test('it parses config with JSON comments without problems', async t => {
-	const {code, stdout} = await execa('../../cli.js', {
+	const {code, stdout} = await execa('../../lib/cli.js', {
 		input: FIXTURE_CSS,
 		cwd: __dirname
 	})
@@ -17,7 +17,7 @@ test('it parses config with JSON comments without problems', async t => {
 
 test('it handles a custom config file correctly when a valid config path is given', async t => {
 	const {code, stdout} = await execa(
-		'./cli.js',
+		'./lib/cli.js',
 		['--config=test/config-file/config.json'],
 		{
 			input: FIXTURE_CSS
@@ -30,7 +30,7 @@ test('it handles a custom config file correctly when a valid config path is give
 
 test('it shows a helpful error message when the custom config file cannot be found', async t => {
 	const {code, stderr} = await t.throwsAsync(
-		execa('./cli.js', {
+		execa('./lib/cli.js', {
 			input: FIXTURE_CSS
 		})
 	)
@@ -41,7 +41,7 @@ test('it shows a helpful error message when the custom config file cannot be fou
 
 test('it reports an error if a config is not found when passed via --config', async t => {
 	const {code, stderr} = await t.throwsAsync(
-		execa('./cli.js', ['--config', 'config.json'], {
+		execa('./lib/cli.js', ['--config', 'config.json'], {
 			input: FIXTURE_CSS
 		})
 	)
@@ -52,7 +52,7 @@ test('it reports an error if a config is not found when passed via --config', as
 
 test('it reports an error if a .constyblerc is not found in the current working directory', async t => {
 	const {code, stderr} = await t.throwsAsync(
-		execa('./cli.js', {
+		execa('./lib/cli.js', {
 			input: FIXTURE_CSS
 		})
 	)

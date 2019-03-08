@@ -8,7 +8,7 @@ const FIXTURE_CSS = 'body {\n\tcolor: blue;\n}\n'
 
 test('it fails the test if an unknown assertion is given in the config', async t => {
 	const {code, stdout} = await t.throwsAsync(
-		execa('../../cli.js', {
+		execa('../../lib/cli.js', {
 			input: FIXTURE_CSS,
 			cwd: __dirname
 		})
@@ -22,7 +22,7 @@ test('it fails the test if an unknown assertion is given in the config', async t
 
 test('it shows an alternative assertion if a given one in the config cannot be found', async t => {
 	const {code, stdout} = await t.throwsAsync(
-		execa('../../cli.js', {
+		execa('../../lib/cli.js', {
 			input: FIXTURE_CSS,
 			cwd: __dirname
 		})
