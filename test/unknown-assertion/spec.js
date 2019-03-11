@@ -1,6 +1,5 @@
 const test = require('ava')
 const execa = require('execa')
-const semver = require('semver')
 const {normalizeTapOutput} = require('../utils')
 const {TestFailureException} = require('../../lib/exceptions')
 
@@ -15,9 +14,7 @@ test('it fails the test if an unknown assertion is given in the config', async t
 	)
 
 	t.is(code, TestFailureException.code)
-	if (semver.gte(process.version, '10.0.0')) {
-		t.snapshot(normalizeTapOutput(stdout))
-	}
+	t.snapshot(normalizeTapOutput(stdout))
 })
 
 test('it shows an alternative assertion if a given one in the config cannot be found', async t => {
@@ -29,7 +26,5 @@ test('it shows an alternative assertion if a given one in the config cannot be f
 	)
 
 	t.is(code, TestFailureException.code)
-	if (semver.gte(process.version, '10.0.0')) {
-		t.snapshot(normalizeTapOutput(stdout))
-	}
+	t.snapshot(normalizeTapOutput(stdout))
 })
