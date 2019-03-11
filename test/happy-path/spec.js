@@ -1,6 +1,5 @@
 const test = require('ava')
 const execa = require('execa')
-const semver = require('semver')
 const {normalizeTapOutput} = require('../utils')
 const {
 	TestFailureException,
@@ -32,16 +31,13 @@ test('it reports a success if all assertions pass with a CSS file path as an arg
 test('it reports a failure if some assertions are exceeded', async t => {
 	const {code, stdout} = await t.throwsAsync(
 		execa('../../lib/cli.js', {
-			input: 'body {\n\tcolor: blue;\n\tmargin: 0;\n}\n',
+			input: 'body {\n\tcolor: green;\n\tmargin: 0;\n}\n',
 			cwd: __dirname
 		})
 	)
 
 	t.is(code, TestFailureException.code)
-
-	if (semver.gte(process.version, '10.0.0')) {
-		t.snapshot(normalizeTapOutput(stdout))
-	}
+	t.snapshot(normalizeTapOutput(stdout))
 })
 
 test('it reports an error if no css is passed but a .constyble is present', async t => {
@@ -59,4 +55,18 @@ test('it handles invalid css', async t => {
 	)
 
 	t.is(code, 1)
+})
+
+test('it skips assertions when the config value is set to false or -1', async t => {
+	const {code, stdout} = await execa(
+		'../../lib/cli.js',
+		['--config', '.constyblerc-with-skip'],
+		{
+			input: 'body {\n\tcolor: blue; color: green;\n}\n',
+			cwd: __dirname
+		}
+	)
+
+	t.is(code, 0)
+	t.snapshot(normalizeTapOutput(stdout))
 })
