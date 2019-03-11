@@ -50,11 +50,7 @@
   },
   "xo": {
     "semicolon": false,
-    "prettier": true,
-    "rules": {
-      "ava/no-import-test-files": "warn",
-      "ava/no-skip-test": "warn"
-    }
+    "prettier": true
   },
   "prettier": {
     "useTabs": true,
