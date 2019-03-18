@@ -24,17 +24,17 @@
     "css-linter"
   ],
   "dependencies": {
-    "@projectwallace/css-analyzer": "^2.1.1",
+    "@projectwallace/css-analyzer": "^2.2.0",
     "flat": "^4.1.0",
     "get-stdin": "^6.0.0",
     "is-array": "^1.0.1",
     "is-number": "^7.0.0",
-    "leven": "^2.1.0",
+    "leven": "^3.0.0",
     "meow": "^5.0.0",
     "parse-json": "^4.0.0",
     "path-exists": "^3.0.0",
     "strip-json-comments": "^2.0.1",
-    "tap": "^12.5.1",
+    "tap": "^12.6.0",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
