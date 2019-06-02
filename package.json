@@ -24,24 +24,24 @@
     "css-linter"
   ],
   "dependencies": {
-    "@projectwallace/css-analyzer": "^2.3.0",
+    "@projectwallace/css-analyzer": "^2.4.0",
     "flat": "^4.1.0",
-    "get-stdin": "^6.0.0",
+    "get-stdin": "^7.0.0",
     "is-array": "^1.0.1",
     "is-number": "^7.0.0",
-    "leven": "^3.0.0",
+    "leven": "^3.1.0",
     "meow": "^5.0.0",
     "parse-json": "^4.0.0",
-    "path-exists": "^3.0.0",
-    "strip-json-comments": "^2.0.1",
-    "tap": "^12.6.1",
-    "update-notifier": "^2.5.0"
+    "path-exists": "^4.0.0",
+    "strip-json-comments": "^3.0.1",
+    "tap": "^14.2.0",
+    "update-notifier": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
+    "ava": "^2.0.0",
     "execa": "^1.0.0",
-    "prettier": "^1.16.4",
-    "semver": "^5.7.0",
+    "prettier": "^1.17.1",
+    "semver": "^6.1.1",
     "trim-right": "^1.0.1",
     "xo": "^0.24.0"
   },
@@ -65,6 +65,11 @@
           "useTabs": false
         }
       }
+    ]
+  },
+  "ava": {
+    "files": [
+      "test/**/*"
     ]
   }
 }
