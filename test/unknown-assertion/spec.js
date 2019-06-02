@@ -1,6 +1,6 @@
 const test = require('ava')
 const execa = require('execa')
-const {normalizeTapOutput} = require('../utils')
+const normalizeTapOutput = require('../normalize-tap-output')
 const {TestFailureException} = require('../../lib/exceptions')
 
 const FIXTURE_CSS = 'body {\n\tcolor: blue;\n}\n'
