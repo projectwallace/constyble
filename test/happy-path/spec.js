@@ -1,10 +1,10 @@
 const test = require('ava')
 const execa = require('execa')
-const {normalizeTapOutput} = require('../utils')
 const {
 	TestFailureException,
 	MissingCssException
 } = require('../../lib/exceptions')
+const normalizeTapOutput = require('../normalize-tap-output')
 
 test('it reports a success if all assertions pass with CSS via stdIn', async t => {
 	const {code, stdout} = await execa('../../lib/cli.js', {

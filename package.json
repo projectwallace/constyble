@@ -50,7 +50,16 @@
   },
   "xo": {
     "semicolon": false,
-    "prettier": true
+    "prettier": true,
+    "rules": {
+      "ava/no-import-test-files": "warn"
+    }
+  },
+  "ava": {
+    "files": [
+      "test/**/*",
+      "!test/normalize-tap-output.js"
+    ]
   },
   "prettier": {
     "useTabs": true,
@@ -65,11 +74,6 @@
           "useTabs": false
         }
       }
-    ]
-  },
-  "ava": {
-    "files": [
-      "test/**/*"
     ]
   }
 }
