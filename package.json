@@ -34,6 +34,7 @@
     "parse-json": "^4.0.0",
     "path-exists": "^4.0.0",
     "strip-json-comments": "^3.0.1",
+    "tap": "^14.3.0",
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
@@ -41,7 +42,6 @@
     "execa": "^2.0.0",
     "prettier": "^1.18.2",
     "semver": "^6.1.2",
-    "tap": "^14.3.0",
     "trim-right": "^1.0.1",
     "xo": "^0.24.0"
   },
