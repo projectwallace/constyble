@@ -24,7 +24,7 @@
     "css-linter"
   ],
   "dependencies": {
-    "@projectwallace/css-analyzer": "^2.4.0",
+    "@projectwallace/css-analyzer": "^2.5.1",
     "flat": "^4.1.0",
     "get-stdin": "^7.0.0",
     "is-array": "^1.0.1",
@@ -34,14 +34,14 @@
     "parse-json": "^4.0.0",
     "path-exists": "^4.0.0",
     "strip-json-comments": "^3.0.1",
-    "tap": "^14.2.0",
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^2.0.0",
-    "execa": "^1.0.0",
-    "prettier": "^1.17.1",
-    "semver": "^6.1.1",
+    "ava": "^2.1.0",
+    "execa": "^2.0.0",
+    "prettier": "^1.18.2",
+    "semver": "^6.1.2",
+    "tap": "^14.3.0",
     "trim-right": "^1.0.1",
     "xo": "^0.24.0"
   },
