@@ -75,6 +75,7 @@
 	"stylesheets.size": 23,
 	"stylesheets.browserhacks.total": 0,
 	"stylesheets.browserhacks.totalUnique": 0,
+	"stylesheets.linesOfCode.sourceLinesOfCode.total": 100,
 	"values.browserhacks.total": 0,
 	"values.browserhacks.unique": [],
 	"values.browserhacks.totalUnique": 0,
