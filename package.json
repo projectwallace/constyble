@@ -24,24 +24,24 @@
     "css-linter"
   ],
   "dependencies": {
-    "@projectwallace/css-analyzer": "^2.5.1",
+    "@projectwallace/css-analyzer": "^2.6.0",
     "flat": "^4.1.0",
     "get-stdin": "^7.0.0",
     "is-array": "^1.0.1",
     "is-number": "^7.0.0",
     "leven": "^3.1.0",
     "meow": "^5.0.0",
-    "parse-json": "^4.0.0",
+    "parse-json": "^5.0.0",
     "path-exists": "^4.0.0",
     "strip-json-comments": "^3.0.1",
-    "tap": "^14.3.0",
-    "update-notifier": "^3.0.0"
+    "tap": "^14.6.1",
+    "update-notifier": "^3.0.1"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
-    "execa": "^2.0.0",
+    "ava": "^2.3.0",
+    "execa": "^2.0.4",
     "prettier": "^1.18.2",
-    "semver": "^6.1.2",
+    "semver": "^6.3.0",
     "trim-right": "^1.0.1",
     "xo": "^0.24.0"
   },
