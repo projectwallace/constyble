@@ -15,7 +15,7 @@
     "analysis",
     "test",
     "assert",
-    "treshold",
+    "threshold",
     "wallace",
     "projectwallace",
     "linter",
@@ -38,42 +38,23 @@
     "update-notifier": "^3.0.1"
   },
   "devDependencies": {
+    "@bartveneman/eslint-config-bv": "0.0.2",
     "ava": "^2.3.0",
+    "eslint": "^6.3.0",
     "execa": "^2.0.4",
-    "prettier": "^1.18.2",
     "semver": "^6.3.0",
-    "trim-right": "^1.0.1",
-    "xo": "^0.24.0"
+    "trim-right": "^1.0.1"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "eslint ./lib ./test && ava"
   },
-  "xo": {
-    "semicolon": false,
-    "prettier": true,
-    "rules": {
-      "ava/no-import-test-files": "warn"
-    }
+  "eslintConfig": {
+    "extends": "@bartveneman/eslint-config-bv"
   },
   "ava": {
     "files": [
       "test/**/*",
       "!test/normalize-tap-output.js"
-    ]
-  },
-  "prettier": {
-    "useTabs": true,
-    "semi": false,
-    "singleQuote": true,
-    "bracketSpacing": false,
-    "proseWrap": "always",
-    "overrides": [
-      {
-        "files": "*.json",
-        "options": {
-          "useTabs": false
-        }
-      }
     ]
   }
 }
