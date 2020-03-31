@@ -6,6 +6,9 @@
   "bin": {
     "constyble": "./lib/cli.js"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "repository": "bartveneman/constyble",
   "license": "MIT",
   "keywords": [
@@ -39,9 +42,9 @@
   },
   "devDependencies": {
     "@bartveneman/eslint-config-bv": "0.0.2",
-    "ava": "^3.5.2",
+    "ava": "^2.4.0",
     "eslint": "^6.8.0",
-    "execa": "^4.0.0",
+    "execa": "^3.4.0",
     "semver": "^7.1.3",
     "trim-right": "^1.0.1"
   },
