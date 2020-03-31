@@ -55,7 +55,7 @@ constyble will try to fetch a `.constyblerc` file in your current directory. You
 can also specify a different JSON config file with the `--config` option
 ([see usage](#usage)). The config JSON should look similar to this:
 
-```json
+```jsonc
 {
 	// Do not exceed 4095, otherwise IE9 will drop any subsequent rules
 	"selectors.total": 4095,
