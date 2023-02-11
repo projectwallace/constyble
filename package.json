@@ -38,11 +38,11 @@
     "path-exists": "^4.0.0",
     "strip-json-comments": "^3.0.1",
     "tap": "^14.10.7",
-    "update-notifier": "^4.1.0"
+    "update-notifier": "^6.0.2"
   },
   "devDependencies": {
     "@bartveneman/eslint-config-bv": "0.0.2",
-    "ava": "^2.4.0",
+    "ava": "^5.2.0",
     "eslint": "^6.8.0",
     "execa": "^3.4.0",
     "semver": "^7.1.3",
