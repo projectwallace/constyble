@@ -1,15 +1,16 @@
 {
   "name": "constyble",
-  "version": "1.3.0",
-  "homepage": "https://www.projectwallace.com/oss",
-  "description": "A CSS complexity linter, based on css-analyzer.",
+  "version": "2.0.0-alpha.1",
+  "homepage": "https://github.com/projectwallace/constyble",
+  "description": "A CSS complexity linter, based on @projectwallace/css-analyzer",
+  "type": "module",
   "bin": {
     "constyble": "./lib/cli.js"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=14"
   },
-  "repository": "bartveneman/constyble",
+  "repository": "https://github.com/projectwallace/constyble",
   "license": "MIT",
   "keywords": [
     "css",
@@ -27,37 +28,19 @@
     "css-linter"
   ],
   "dependencies": {
-    "@projectwallace/css-analyzer": "^2.7.1",
-    "flat": "^5.0.0",
-    "get-stdin": "^7.0.0",
-    "is-array": "^1.0.1",
-    "is-number": "^7.0.0",
-    "leven": "^3.1.0",
-    "meow": "^6.1.0",
-    "parse-json": "^5.0.0",
-    "path-exists": "^4.0.0",
-    "strip-json-comments": "^3.0.1",
-    "tap": "^14.10.7",
-    "update-notifier": "^4.1.0"
+    "@projectwallace/css-analyzer": "^5.8.0",
+    "flat": "github:hughsk/flat#v6.0.0",
+    "get-stdin": "^9.0.0",
+    "json5": "^2.2.3",
+    "leven": "^4.0.0",
+    "meow": "^11.0.0",
+    "tap": "^16.3.4"
   },
   "devDependencies": {
-    "@bartveneman/eslint-config-bv": "0.0.2",
-    "ava": "^2.4.0",
-    "eslint": "^6.8.0",
-    "execa": "^3.4.0",
-    "semver": "^7.1.3",
-    "trim-right": "^1.0.1"
+    "execa": "^7.0.0",
+    "uvu": "^0.5.6"
   },
   "scripts": {
-    "test": "eslint ./lib ./test && ava"
-  },
-  "eslintConfig": {
-    "extends": "@bartveneman/eslint-config-bv"
-  },
-  "ava": {
-    "files": [
-      "test/**/*",
-      "!test/normalize-tap-output.js"
-    ]
+    "test": "uvu"
   }
 }

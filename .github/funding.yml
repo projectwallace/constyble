@@ -1,4 +1,7 @@
-github: []
-patreon: bartveneman
+github: ["projectwallace"]
 open_collective: projectwallace
-custom: ['https://www.projectwallace.com/sponsor', 'https://www.paypal.me/bartveneman']
+custom:
+  [
+    "https://www.projectwallace.com/funding",
+    "https://www.paypal.me/bartveneman",
+  ]

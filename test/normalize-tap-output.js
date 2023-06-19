@@ -1,9 +1,7 @@
-const trimRight = require('trim-right')
-
-module.exports = tapOutput => {
+export function normalize(tapOutput) {
 	return tapOutput
 		.split('\n')
 		.map(line => line.replace(/#.*/, ''))
-		.map(line => trimRight(line))
+		.map(line => line.trimEnd())
 		.join('\n')
 }
