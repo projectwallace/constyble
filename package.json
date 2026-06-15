@@ -37,7 +37,7 @@
     "parse-json": "^5.0.0",
     "path-exists": "^4.0.0",
     "strip-json-comments": "^3.0.1",
-    "tap": "^14.10.7",
+    "tap": "^21.7.4",
     "update-notifier": "^4.1.0"
   },
   "devDependencies": {
