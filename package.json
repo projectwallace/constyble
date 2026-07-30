@@ -27,7 +27,7 @@
     "css-linter"
   ],
   "dependencies": {
-    "@projectwallace/css-analyzer": "^2.7.1",
+    "@projectwallace/css-analyzer": "^9.9.3",
     "flat": "^5.0.0",
     "get-stdin": "^7.0.0",
     "is-array": "^1.0.1",
